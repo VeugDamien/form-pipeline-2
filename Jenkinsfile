@@ -4,6 +4,7 @@ pipeline{
     stage('Build') {
       steps {
         echo "Compilation from test"
+        sh "make"
       }
     }
     stage('Test') {
