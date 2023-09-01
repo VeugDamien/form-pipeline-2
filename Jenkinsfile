@@ -3,8 +3,8 @@ pipeline{
   stages {
     stage('Build') {
       steps {
-        echo "Compilation from test"
-        sh "make"
+        echo "Compilation from test" > toto.txt
+        archiveArtifacts artifacts: 'toto.txt', fingerprint: true
       }
     }
     stage('Test') {
