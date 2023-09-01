@@ -3,7 +3,7 @@ pipeline{
   stages {
     stage('Build') {
       steps {
-        echo "Compilation from main"
+        echo "Compilation from test"
       }
     }
   }
